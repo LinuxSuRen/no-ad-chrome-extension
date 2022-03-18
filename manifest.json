@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "No AD",
+  "description": "No AD",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/LinuxSuRen/no-ad-chrome-extension",
+  "permissions": [
+    "unlimitedStorage",
+    "notifications",
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.meijutt.tv/*"],
+      "run_at": "document_idle",
+      "js": ["src/meijutt.js"]
+    },
+    {
+      "matches": ["https://www.dy2018.com/*"],
+      "run_at": "document_idle",
+      "js": ["src/dy2018.js"]
+    }
+  ]
+}
