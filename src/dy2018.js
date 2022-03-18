@@ -7,3 +7,12 @@ function removeById(id) {
         ele.remove()
     }
 }
+
+function removeByClassName(name) {
+    const eles = document.getElementsByClassName(name)
+    if (eles) {
+        for (var i = 0; i < eles.length; i++) {
+            eles[i].remove()
+        }
+    }
+}

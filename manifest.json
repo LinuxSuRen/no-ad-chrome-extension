@@ -14,11 +14,14 @@
       "matches": ["https://www.meijutt.tv/*"],
       "run_at": "document_idle",
       "js": ["src/meijutt.js"]
-    },
-    {
+    }, {
       "matches": ["https://www.dy2018.com/*"],
       "run_at": "document_idle",
       "js": ["src/dy2018.js"]
+    }, {
+      "matches": ["https://doodle.com/*/*/*"],
+      "run_at": "document_end",
+      "js": ["src/doodle.js"]
     }
   ]
 }
