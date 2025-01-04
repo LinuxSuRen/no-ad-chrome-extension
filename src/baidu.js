@@ -9,7 +9,17 @@ function removeByMU(name) {
             divs[i].remove()
         }
     }
-    
 }
 
-removeByMU("blog.csdn.net")
+loopFunc(function () {
+    removeByMU("blog.csdn.net")
+}, 1000);
+
+function loopFunc(callback, checkFrequencyInMs) {
+    (function loopSearch() {
+        callback();
+        setTimeout(function () {
+            loopSearch();
+        }, checkFrequencyInMs);
+    })();
+}
