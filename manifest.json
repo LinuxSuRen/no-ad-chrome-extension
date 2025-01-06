@@ -26,6 +26,10 @@
       "matches": ["https://www.baidu.com/*"],
       "run_at": "document_end",
       "js": ["src/baidu.js"]
+    }, {
+      "matches": ["https://cn.bing.com/*"],
+      "run_at": "document_end",
+      "js": ["src/bing.js"]
     }
   ]
 }
