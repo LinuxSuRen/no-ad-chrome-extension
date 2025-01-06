@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "No AD",
   "description": "No AD",
   "version": "0.0.1",
@@ -22,6 +22,10 @@
       "matches": ["https://doodle.com/*/*/*"],
       "run_at": "document_end",
       "js": ["src/doodle.js"]
+    }, {
+      "matches": ["https://www.baidu.com/*"],
+      "run_at": "document_end",
+      "js": ["src/baidu.js"]
     }
   ]
 }
